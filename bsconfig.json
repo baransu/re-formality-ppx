@@ -1,0 +1,33 @@
+{
+  "name": "bs-log-ppx",
+  "bs-dependencies": ["reason-react", "re-formality"],
+  "reason": {
+    "react-jsx": 2
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "type": "ppx",
+      "ppx": ["ReFormalityPpx"]
+    },
+    {
+      "dir": "test",
+      "type": "dev",
+      "ppx": ["ReFormalityPpx"],
+      "backend": "js"
+    }
+  ],
+  "entries": [
+    {
+      "backend": "native",
+      "type": "ppx",
+      "main-module": "ReFormalityPpx"
+    },
+    {
+      "backend": "js",
+      "main-module": "Test"
+    }
+  ],
+  "refmt": 3,
+  "ocaml-dependencies": ["compiler-libs"]
+}

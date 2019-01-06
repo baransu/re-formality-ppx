@@ -1,0 +1,19 @@
+{
+  "name": "re-formality-ppx",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Tomasz Cichocinski <tomaszcichocinski@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "bsb -make-world -backend native",
+    "test": "bsb -make-world -backend js",
+    "clean": "bsb -clean-world"
+  },
+  "devDependencies": {
+    "bsb-native": "4.0.7000"
+  },
+  "dependencies": {
+    "re-formality": "^1.1.1",
+    "reason-react": "^0.5.3"
+  }
+}
